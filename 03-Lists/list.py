@@ -1,3 +1,8 @@
+month = ['Januar', 'Februar']
+print(month)
+print(month[0][0])
+print(month[1][0])
+
 number = [
     1,2,3,
     4,5,6,
