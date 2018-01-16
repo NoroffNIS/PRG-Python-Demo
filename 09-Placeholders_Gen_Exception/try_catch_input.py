@@ -1,4 +1,4 @@
-user_input = input('Programming at Noroff')
+user_input = input('Type in a number')
 try:
     binary = 2**user_input
     print(binary)
