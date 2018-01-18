@@ -1,14 +1,13 @@
 def increment():
-    i = 0
+    i = 10
     while True:
-        print('i:', i)
         yield i
-        i += 1
-        print('i:', i)
+        i -= 1
 
 inc = increment()
-
-print(next(inc))
-print(next(inc))
-print(next(inc))
-print(next(inc))
+print('1',next(inc))
+print('2',next(inc))
+print('3',next(inc))
+print('4',next(inc))
+print('5',next(inc))
+print('6',next(inc))
