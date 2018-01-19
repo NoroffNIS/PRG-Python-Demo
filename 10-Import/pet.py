@@ -1,5 +1,5 @@
-import pets_saying
+from pets_saying import *
 
-pets_saying.lick()
-pets_saying.nap()
-pets_saying.pur()
+lick(pet='A Dog is not')
+nap()
+pur()

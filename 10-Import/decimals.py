@@ -5,7 +5,7 @@ rate = 1.05
 
 tax = item * rate
 total = item + tax
-print('Total: {:0.2f} \nItem: {:0.2f}'.format(total, tax))
+print('Total: {:0.20f} \nItem: {:0.20f}'.format(total, tax))
 
 
 item = Decimal(0.7)
