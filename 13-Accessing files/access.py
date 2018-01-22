@@ -1,0 +1,6 @@
+file = open('text_file', 'rb')
+print('Name:', file.name)
+print('Mode:', file.mode)
+print('Readable:', file.readable())
+print('Writeable:', file.writable())
+print()
