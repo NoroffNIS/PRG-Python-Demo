@@ -1,4 +1,4 @@
-﻿s = 'Röd'
+﻿s = 'Rød'
 print( '\nRed String:' , s )
 print( 'Type:' , type( s ) , '\tLength:' , len( s ) )
 
