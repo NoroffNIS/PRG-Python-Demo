@@ -2,6 +2,8 @@ string = 'Hello\nthis is a new line'
 for letter in string:
     print(letter)
 
+
+
 def display(s='Default'):
     '''Display an argumant value'''
     print(s)
