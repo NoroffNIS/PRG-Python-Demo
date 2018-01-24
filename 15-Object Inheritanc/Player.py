@@ -1,4 +1,3 @@
-
 from Person import *
 
 class Player(Person):
@@ -9,9 +8,7 @@ class Player(Person):
     def __init__( self, name ):
         Player.count += 1
         self.name = name
-        print('init:', self.name, self.birtdate)
+        print('init:', self.name)
 
     def allowed_to_play(self):
         return age_limit >= self.get_age()
-#print('Start!')
-#print(Player.name)
