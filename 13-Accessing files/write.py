@@ -1,4 +1,4 @@
-file = open('text_file', 'w')
+file = open('text_file', 'wb')
 text = 'I have a problem\n'
 text += 'I decide to bring it to stack overflow\n'
 text += 'I awkwardly write down my question\n'

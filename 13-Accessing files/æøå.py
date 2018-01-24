@@ -6,6 +6,7 @@ nfile.close()
 
 nfile = open('norske_bokstaver', 'a+b')
 norske_bokstaver_raw = norske_bokstaver.encode('utf-8')
+print(norske_bokstaver_raw)
 nfile.write(norske_bokstaver_raw)
 nfile.close()
 

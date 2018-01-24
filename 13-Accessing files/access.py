@@ -1,6 +1,7 @@
-file = open('text_file', 'rb')
+file = open('text_file', 'a+b')
 print('Name:', file.name)
 print('Mode:', file.mode)
 print('Readable:', file.readable())
 print('Writeable:', file.writable())
+file.close()
 print()

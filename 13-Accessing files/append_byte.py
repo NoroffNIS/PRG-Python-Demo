@@ -1,17 +1,16 @@
 file = open('text_file', 'rb')
-text = ''
+text = b''
 for line in file:
     text += line
 file.close()
 print(text)
 
-e = text.count('e')
-a = text.count('a')
-nl = text.count('\n')
+e = text.count(b'e')
+a = text.count(b'a')
+nl = text.count(b'\n')
 
-file_a = open('text_file', 'a')
-file_a.write('Its {} e\'s in the file!\n'.format(e))
-file_a.write('Its {} a\'s in the file!\n'.format(a))
-file_a.write('Its {} lines in the file!\n'.format(nl))
-file_a.write('ÆØÅ')
+file_a = open('text_file', 'ab')
+file_a.write(b'Its {} e\'s in the file!\n'.format(e))
+file_a.write(b'Its {} a\'s in the file!\n'.format(a))
+file_a.write(b'Its {} lines in the file!\n'.format(nl))
 file_a.close()
