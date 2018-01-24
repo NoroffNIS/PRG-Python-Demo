@@ -1,13 +1,27 @@
 from Player import *
 
 print('Team A')
-player = Player('Jens')
+player_1 = Player('Jens', 24)
+player_2 = Player('Rene', 29)
 
-print('Name:',player.name)
+
 print('Numer of players:', Player.count)
-#print('Age:', player.get_age())
-#player.incrase_age()
-#print('Age:',player.get_age())
+
+
+print('Name:',getattr(player_1, 'name'))
+setattr(player_1, 'name', 'Brage')
+print('Name:',getattr(player_1, 'name'))
+print('hasattr:', hasattr(player_1, 'age'))
+print('Age 1:', player_1.get_age())
+print('Name:',player_2.name)
+print('Age 2:', player_2.get_age())
+player_1.incrase_age()
+print('Age 1:',player_1.get_age())
+print('Age 2:', player_2.get_age())
+
+print('hasattr:', hasattr(player_1, 'age'))
+print('delattr:', delattr(player_1, 'age'))
+print('hasattr:', hasattr(player_1, 'age'))
 
 '''
 player1 = Player()
