@@ -9,4 +9,4 @@ dt_dt = datetime.datetime.today()
 
 print(dt_d)
 print(dt_t.isoformat)
-print(dt_dt
+print(dt_dt)
