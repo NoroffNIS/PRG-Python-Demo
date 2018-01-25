@@ -1,16 +1,17 @@
-class Shape:
+from brick import *
+class Shape(Brick):
     count = 0
     width = 0
     height = 0
     depth = 0
 
     def __init__(self):
-        count += 1
+        Shape.count += 1
 
-    def set_widht(self, widht):
+    def set_width(self, width):
         self.width = width
 
-    def get_widht(self):
+    def get_width(self):
         return self.width
 
     def set_height(self, height):
@@ -18,3 +19,9 @@ class Shape:
 
     def get_height(self):
         return self.height
+
+    def set_depth(self, depth):
+        self.depth = depth
+
+    def get_depth(self):
+        return self.depth
