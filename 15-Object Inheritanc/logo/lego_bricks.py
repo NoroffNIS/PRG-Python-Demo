@@ -1,6 +1,16 @@
 from rectangle import *
 from triagnle import *
 
+class LegoBrick(Rectangle, Triangle):
+    h = 10
+    b = 10/2
+    set_width = b
+    set_height = h
+
+    def area_Brick():
+        return arealR() + arealT()
+
+
 lego_b_R = Rectangle()
 lego_b_R.set_width(20)
 lego_b_R.set_height(20)

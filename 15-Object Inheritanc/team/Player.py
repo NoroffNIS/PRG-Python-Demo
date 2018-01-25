@@ -11,4 +11,9 @@ class Player(Person):
         print('init:', self.name)
 
     def allowed_to_play(self):
-        return age_limit >= self.get_age()
+        return self.age_limit >= self.get_age()
+
+    def player_info(self):
+        print('Name:\t',self.name)
+        print('Age:\t',self.get_age())
+        print('Allowed to play:', self.allowed_to_play())

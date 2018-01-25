@@ -2,7 +2,7 @@ from shape import *
 
 class Triangle(Shape):
     name = 'Triangle'
-    
+
     def areal(self):
         return (self.height * self.width)/2
 
