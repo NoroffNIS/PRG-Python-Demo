@@ -1,9 +1,9 @@
-﻿from Duck import *
+from Duck import *
 from Mouse import *
- 
+
 def describe( object ) :
-	object.talk()
-	object.coat()
+    object.talk()
+    object.coat()
 
 donald = Duck()
 mickey = Mouse()
