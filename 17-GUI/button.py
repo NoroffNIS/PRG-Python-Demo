@@ -2,6 +2,7 @@ from tkinter import *
 root = Tk()
 root.title('First window')
 counter = 0
+
 vtext = StringVar()
 vtext.set('Hello world!')
 
