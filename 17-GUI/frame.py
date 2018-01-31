@@ -6,13 +6,14 @@ window = Tk()
 window.configure(bg='blue')
 window.title( 'Entry Example' )
 
-frame = Frame( window , bg='red')
+window.cget('higth')
+frame = Frame( window , bg='red', borderwidth=5)
 entry = Entry( frame )
 
 def dialog() :
 	box.showinfo( 'Greetings' , 'Welcome ' + entry.get() )
 
-btn = Button( frame , text = 'Enter Name' , command = dialog )
+btn = Button( window , text = 'Enter Name' , command = dialog )
 
 btn.pack( side = RIGHT , padx = 5 )
 entry.pack( side = LEFT )
