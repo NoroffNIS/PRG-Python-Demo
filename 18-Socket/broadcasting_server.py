@@ -9,6 +9,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server_addr = (socket.gethostname(), 5000)
 s.bind(server_addr)
 s.setblocking(0)
+
 print(Fore.WHITE, 'Starting server on:', *server_addr)
 while True:
     try:
