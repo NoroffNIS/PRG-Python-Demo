@@ -1,7 +1,7 @@
 import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_address = (socket.gethostname(), 50000)
-s.connect((socket.gethostname(), 50000))
+server_address = ('172.24.1.66', 50000)
+s.connect(server_address)
 print('Connection to {}'.format(server_address))
 
 try:
