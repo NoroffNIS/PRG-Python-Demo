@@ -1,7 +1,7 @@
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_address = ('172.24.1.66' , 50000)
+server_address = ('172.24.3.65' , 50000)
 s.bind(server_address)
 s.listen(1)
 print('Listning on {}:{}'.format(*server_address))
