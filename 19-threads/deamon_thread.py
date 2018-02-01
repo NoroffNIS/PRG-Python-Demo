@@ -22,7 +22,7 @@ t = threading.Thread(target=non_daemon, name='non-daemon', args=(Fore.GREEN,))
 d.start()
 t.start()
 
-#d.join()
-#t.join()
+d.join()
+t.join()
 
 print(Fore.WHITE, threading.currentThread().getName(),'- Done!')
