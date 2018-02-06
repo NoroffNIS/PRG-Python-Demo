@@ -1,0 +1,10 @@
+To compile the C code to a executable you will need gcc installed.
+gcc is the c compiler, and the command is:
+  gcc exploit.c
+this will produse a.out file tht is executable with ./a.out.
+You can use the option -o <outputn name> to choose the output name
+
+example:
+gcc exploit.c -o exploit -fno-stack-protector
+Here we also add the -fno-stack-protector option,
+so that it will take away the protection for the memory stack.
