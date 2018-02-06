@@ -10,15 +10,15 @@ def custumer(cond, color):
         print(color, threading.currentThread().getName(), '\t->  entering the shop')
         time.sleep(3)
         print(color, threading.currentThread().getName(), '\t->  exiting the shop')
-        #cond.notify()
+        cond.notify()
 
 def merchant(cond, color):
     print(color, threading.currentThread().getName(), '\t->  preparing the shop')
     time.sleep(3)
     with cond:
         print(color, threading.currentThread().getName(), '\t->  opens the shop')
-        cond.notifyAll()
-        #cond.notify()
+        #cond.notifyAll()
+        cond.notify()
 
 condition = threading.Condition()
 c1 = threading.Thread(name='Custumer 1', target=custumer, args=(condition, Fore.RED))

@@ -16,6 +16,7 @@ def worker_2(e,time, color):
             print(color, threading.currentThread().getName(), '\t-> Worker_2 prossesing')
         else:
             print(color, threading.currentThread().getName(), '\t-> Worker_2 doing other work')
+            e.set()
 
 e = threading.Event()
 
@@ -25,6 +26,8 @@ t2 = threading.Thread(target=worker_2, name='t2-nBlock', args=(e,2,Fore.GREEN))
 t2.start()
 
 print(Fore.WHITE, threading.currentThread().getName(), '\t-> Waithing before calling Event.set()')
-time.sleep(6)
-e.set()
+#time.sleep(6)
+#e.set()
 print(Fore.WHITE, threading.currentThread().getName(), '\t-> Event is set')
+t1.join()
+t2.join()

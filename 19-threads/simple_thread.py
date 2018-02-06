@@ -6,4 +6,5 @@ def thread_worker():
     return
 
 for i in range(5):
-    threading.Thread(target=thread_worker).start()
+    t = threading.Thread(target=thread_worker)
+    t.start()
