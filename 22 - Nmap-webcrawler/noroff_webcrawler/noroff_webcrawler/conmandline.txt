@@ -1,0 +1,4 @@
+scrapy shell "https://www.noroff.no/kontakt/ansatte/50-fagpersonel
+l/188-joakim-kargaard-b-sc-hons"
+
+response.css('span.contact-emailto').extract()
