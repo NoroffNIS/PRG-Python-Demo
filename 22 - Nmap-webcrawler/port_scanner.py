@@ -1,5 +1,5 @@
 from socket import *
-targetIP = '172.24.1.66'
+targetIP = '172.24.3.65'
 
 for port in range(0, 433):
     try:

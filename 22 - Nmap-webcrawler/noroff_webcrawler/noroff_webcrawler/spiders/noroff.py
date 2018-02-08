@@ -8,7 +8,7 @@ import re
 class NoroffSpider(scrapy.Spider):
     name = "noroff"
     allowed_domains = ["noroff.no"]
-    start_urls = ['https://www.noroff.no/kontakt/ansatte']
+    start_urls = ['noroff.no/']
 
     def parse(self, response):
         '''

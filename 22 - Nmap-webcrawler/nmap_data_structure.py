@@ -8,15 +8,14 @@
     ('hostnames', [{
         'type': 'PTR',
         'name': 'localhost'
-    }]), 
+    }]),
     ('addresses ', {'ipv4 ': '127.0.0.1 '}),
     ('tcp ', {
         22: {
             'extrainfo ': '',
-            'name ': '
-        ssh ', '
-        product ': '
-        ', '
+            'name ': 'ssh ',
+            'product ': ''
+            , '
         version ': '
         ', '
         state ': '
