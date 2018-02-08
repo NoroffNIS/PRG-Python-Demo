@@ -6,19 +6,12 @@ import getopt
 global hit
 hit = '1'
 
-
-def banner():
-    print("\n***************************************")
-    print("* ForzaBruta 0.1*")
-    print("***************************************")
-
-
 def usage():
     print("Usage:")
-    print("		-w: url (http://somesite.com/FUZZ)")
+    print("		-u: username")
     print("		-t: threads")
     print("		-f: dictionary file\n")
-    print("example: forzabruta.py -w http://www.targetsite.com/FUZZ -t 5 -f common.txt\n")
+    print("example: forzabruta.py -u admin -t 5 -f pass.txt\n")
 
 
 class request_performer(Thread):
@@ -49,7 +42,6 @@ class request_performer(Thread):
 
 
 def start(argv):
-    banner()
     if len(sys.argv) < 5:
         usage()
         sys.exit()

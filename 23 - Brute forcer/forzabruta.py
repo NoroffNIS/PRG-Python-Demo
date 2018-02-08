@@ -3,13 +3,6 @@ from threading import Thread
 import sys
 import getopt
 
-
-def banner():
-    print("\n***************************************")
-    print("* ForzaBruta 0.1*")
-    print("***************************************")
-
-
 def usage():
     print("Usage:")
     print("		-w: url (http://somesite.com/FUZZ)")
@@ -38,7 +31,6 @@ class request_performer(Thread):
 
 
 def start(argv):
-    banner()
     if len(sys.argv) < 5:
         usage()
         sys.exit()

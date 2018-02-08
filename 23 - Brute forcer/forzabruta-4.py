@@ -5,19 +5,11 @@ import time
 import getopt
 import re
 import hashlib
-
 from colorama import Fore
 import traceback
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
-
-def banner():
-    print("\n***************************************")
-    print("* ForzaBruta 0.3*")
-    print("***************************************")
-
 
 def usage():
     print("Usage:")
@@ -69,7 +61,6 @@ class request_performer(Thread):
             print('Run error', e)
 
 def start(argv):
-    banner()
     if len(sys.argv) < 5:
         usage()
         sys.exit()

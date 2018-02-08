@@ -8,3 +8,4 @@ test2.txt
 admin
 Admin
 index.php
+home.php
